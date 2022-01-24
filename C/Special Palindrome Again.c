@@ -80,7 +80,7 @@ struct hashmap {
 };
 // Complete the substrCount function below.
 long substrCount(int n, char* s) {
-    struct hashmap* map = malloc(sizeof(int));\
+    struct hashmap* map = malloc(sizeof(struct hashmap));
     map->charc = malloc(n * sizeof(char));
     map->cnt = calloc(n, sizeof(int));
     int i, idx = 0;
